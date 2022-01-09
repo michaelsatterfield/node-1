@@ -1,7 +1,8 @@
 
+const mission = 'learn';
 
-let findMeaning =() =>{
-    return 42
+if (mission === 'learn') {
+    console.log(" Time to write node code!")
+} else {
+    console.log(`Is ${mission} really more fun?`)
 }
-console.log(findMeaning())
-
