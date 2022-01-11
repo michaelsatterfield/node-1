@@ -15,6 +15,12 @@ celebrity.on('race', (result) => {
         console.log("awww");
     }
 });
+
+
+process.on('exit', (code) =>{
+    console.log('Process exit event with code: ', code)
+});
+
 celebrity.emit('race', 'win');
 celebrity.emit('race', 'loss');
 
