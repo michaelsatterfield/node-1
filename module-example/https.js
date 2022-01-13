@@ -4,7 +4,10 @@
 const request = require('./request');
 const respone = require('./response')
 
-function request(url, data) {
-    send(url,data);
-    return read();
+function makeRequest(url, data) {
+    return request.send(url,data);
+    return respone.read();
 }
+
+const responseData = makeRequest('https://google.com', 'hello')
+console.log(responseData)
