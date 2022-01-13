@@ -6,3 +6,7 @@ function decrypt(data) {
 function read() {
    return decrypted('data')
 }
+
+module.exports = {
+    read,
+}

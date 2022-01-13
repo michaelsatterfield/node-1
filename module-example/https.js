@@ -1,4 +1,10 @@
 
+
+//imported functions from other files
+const request = require('./request');
+const respone = require('./response')
+
 function request(url, data) {
-    return response;
+    send(url,data);
+    return read();
 }
