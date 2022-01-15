@@ -9,5 +9,5 @@ function makeRequest(url, data) {
     return read();
 }
 
-const responseData = makeRequest('https://google.com', 'hello')
+const responseData = makeRequest('https://google.com', 'hi')
 console.log(responseData)
